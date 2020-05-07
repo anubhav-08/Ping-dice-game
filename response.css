@@ -6,6 +6,15 @@
 
 @media(max-width : 670px)
 {
+    
+    body{
+        background-size: auto;
+    }
+    #instructions{
+        margin-right:23px;
+    }
+    
+    
     #instructions li{
         font-size: 20px;
     }
