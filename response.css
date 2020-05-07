@@ -1,0 +1,164 @@
+/******************************************
+*       MAKING GAME COMPATIBLE FOR
+*        PHONES AND TABLETS/IPADS
+*******************************************/
+
+
+@media(max-width : 670px)
+{
+    #instructions li{
+        font-size: 20px;
+    }
+    
+    .container{
+        width:100%
+    }
+    .gameboard{
+        position: absolute;
+        top:50%;
+        //display: flex;
+        flex-wrap: wrap;
+        width:300px;
+        //height:400px;
+        font-size: 10px;
+        border-radius: 0px;
+        
+    }
+    
+    
+    #player-0{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    }
+    #player-1{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+    
+    
+    
+    
+    .score{
+        font-size: 30px;
+    }
+    
+    .player{
+        width:100%;
+        border-radius: 0px;
+        
+        
+    }
+    .player h2{
+        color:black;
+        font-size: 20px;
+    }
+    .player h1{
+        font-size: 40px;
+        display: none;
+    }
+    .current{
+        font-size: 10px;
+        margin-top: 25px;
+        padding: 5px;
+    }
+    .current h3{
+        font-size: 20px;
+    }
+    
+    .controller{
+        
+        display:inline-flex;
+        float: left;
+        height: : 80px;
+        position: absolute;
+        left:50;
+        top:50%;
+    }
+    
+    
+    
+    #dicepic{
+        width:40px;
+        height: 40px;
+    }
+    .diceImg{
+       
+        width:42px;
+        height: 42px;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    i{
+        font-size: 10px;
+    }
+    .btn{
+        //position: relative;
+        //left: 55%;
+        //top: 20%;
+        height: 80px;
+        margin-top: -9px;
+        display: inline-block;
+        float: left;
+        padding:0px 0px;
+        margin-left: 64px;
+    }
+    .btn h4{
+        font-size:12px;
+        padding: 0px;
+        margin-bottom: 10px;
+        padding:5px;
+        
+    }
+    .start-again{
+        height: 80px;
+    }
+    
+    .start-again h1{
+        //position: relative;
+        //left:-150%;
+        font-size: 15px;
+        width:50px;
+        //height: 80px;
+        
+    }
+    
+    #current-1{
+        font-size: 15px;
+        
+    }
+    #current-0{
+        font-size: 15px;
+    }
+    
+    
+    
+    /*******************************
+    *
+    * CSS for winning colounm
+    *
+    *
+    *******************************/
+    
+    .winner{
+        font-size: 23px;
+        width: 300px;
+        
+    }
+    
+    .winner h2 {
+        font-size: 15px;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+

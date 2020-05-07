@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(backgroud.jpg);
+    background-size: cover;
+    font-family:monospace;
+}
+.container{
+    //background-color: aqua;
+    max-width:1170px;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 15;
+    
+}
+
+#instructions{
+    display: block;
+    //background-color: aqua;
+    color: wheat;
+    padding-left: 10px;
+    margin-top:50px;
+    //position: absolute;
+    //left:20%;
+    //top:10%;
+}
+ol{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-left: 50px;
+    font-size: 25px;
+    
+}
+ul{
+    padding-left: 40px;
+    list-style: square;
+}
+li{
+    margin-bottom: 10px;
+    //padding: 0px 10px;
+}
+#instructions h1{
+    color:aquamarine;
+}
+#start-btn{
+    text-align: center;
+    margin-top:60px;
+    padding-bottom: 20px;
+}
+#start-btn h2{
+    text-align: center;
+    position: relative;
+    color:black;
+    display: inline-block;
+    background-color: green;
+    box-shadow: 0px 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 200;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#start-btn h2:hover{
+    background-color: darkgreen;
+    font-weight: 600;
+    
+}
+#start-btn h2:active{
+    font-weight: 500;
+    box-shadow: 0px 0px;
+    position: relative;
+    top: 5px;
+    
+    
+}
+
+.gameboard{
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border: 5px solid black;
+    border-radius: 30px;
+    //background-color: blue;
+    //margin: 100px 150px;
+    //display: flex;
+    height: 500px;
+    width:850px;
+    transform: translate(-50%,-50%);
+    
+}
+.player{
+    width:50%;
+    text-align: center;
+    padding: 20px;
+    
+}
+.player h2{
+    font-size: 48px;
+    font-weight: 800;
+    margin-top:20px;
+    color:darkseagreen;
+    
+    
+}
+.player h1{
+    position: absolute;
+    top:-5%;
+    left: 22%;
+     font-size:75px;
+    color:#ff1a1a;
+    
+
+    
+}
+#player-0{
+    background-color:azure;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#player-1{
+    background-color:azure;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.score{    
+    font-weight: 100;
+    font-style: italic;
+    color:crimson;
+    margin-top:20px;
+    font-size: 55px;
+}
+.current{
+    background-color: red;
+    font-size: 30px;
+    display: inline-block;
+    //width:100px;
+    //height:100px;
+    margin-top: 190px;
+    padding:20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.current h3{
+    font-size: 20px;
+}
+.controller{
+    position:absolute;
+    left:50%;
+    top:50%;    
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+}
+
+
+.diceImg{
+    margin-top: 150px;
+    height: 85px;
+}
+
+#dicepic{
+    
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#btn-roll{
+     position:relative;
+}
+#btn-hold{
+    position: relative;
+}
+.btn{
+    margin-top:100px;
+}
+.btn h4{
+   
+    font-weight: 200;
+    font-family:serif;
+    padding: 0px 10px;
+    display: block;
+    font-size: 25px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: green;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px;
+    
+}
+.btn h4:hover{
+    background-color: darkgreen;
+    font-weight: 800;
+    
+}
+.btn h4:active{
+    position:absolute;
+    //left: 5px;
+    top: 5px;
+    box-shadow: 0px 0px;
+    
+}
+
+.start-again h1{
+    position: relative;
+    border:1px solid black;
+    color:darkred;
+    padding: 5px;
+    font-size: 20px;
+    background-color:cadetblue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px black;
+    display: inline-block;
+    width: 100px;
+}
+
+.start-again h1:hover{
+    background-color:cornflowerblue;
+    font-weight: 600;
+}
+.start-again h1:active{
+    position: relative;
+    top:5px;
+    font-weight: bold;
+    box-shadow: 0px 0px;
+}
+
+i{
+    color:darkgrey;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+
+.winner{
+    display: none;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: serif;
+    color:coral;
+    background-color:bisque;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 30px;
+    width:700px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.winner h2{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    color:black;
+    font-weight: 200;
+    background-color: green;
+    border:2px solid black;
+    border-radius: 20px;
+    padding:10px; 
+    margin-bottom: 30px;
+    box-shadow: 0px 5px;
+    cursor: pointer;
+    
+}
+
+.winner h2:hover{
+    font-weight: 700;
+    background-color:forestgreen;
+}
+
+.winner h2:active{
+    font-weight: 500;
+    box-shadow: 0px 0px;
+    position: relative;
+    top:5px;
+}
+
+

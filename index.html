@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="response.css">
+    <script src="https://kit.fontawesome.com/3f77ab85f3.js" crossorigin="anonymous"></script>
+    <title>Ping Game</title>
+</head>
+<body>
+  <div class="container">
+      <div id="instructions">
+          <h1>Instructions for game:-</h1>
+          <ol class="instru">
+              <li>This game is for two players.</li>
+              <li>Game contains two events:
+              <ul>
+                  <li>Rolling of dice.</li>
+                  <li>Holding the score.</li>
+              </ul>
+              </li>
+              <li>The first player rolls the die. If he rolls as 2, 3, 4, 5, or 6, he add up his score.</li>
+              <li>When a player doesn’t roll a 1, he can decide to continue rolling and adding the points from each roll to his total score for that turn.  Or he can hold onto his points and pass the die to the next player.</li>
+              <li>However! If the player rolls a 1, he loses all his points (for that turn only) and must pass the die to the next player.</li>
+              <li>Play continues in this manner until one player reaches a score of <b>100</b>.</li>
+          </ol>
+          
+          <div id="start-btn">
+              <h2>START GAME</h2>
+          </div>
+      </div>
+       <div class="gameboard">
+           <div class="player active" id="player-0">
+               <h1></h1>
+               <h2>Player 1</h2>
+               
+                <div class="score" id="score-0">
+                    36
+                </div>
+                <div class="current" >
+                       <h3>Current</h3>
+                      <span id="current-0">4</span>
+                </div>
+           </div>
+           <div class="controller">
+              <div class="start-again">
+                  <h1>+ New Game</h1>
+              </div>
+               <div class="diceImg">
+                   <img id="dicepic" src="dice-1.jpg" width="85px" height="85px">
+               </div>
+               <div class="btn">
+                   <h4 id="btn-roll"><i class="fas fa-undo"></i> ROLL</h4>
+               <h4 id="btn-hold"><i class="fas fa-chevron-circle-down"></i> HOLD</h4>
+               </div>
+               
+           </div>
+           <div class="player" id="player-1">
+                
+                <h2>Player 2</h2>
+                
+                <div class="score" id="score-1">
+                   
+                    77
+                </div>
+                <div class="current" >
+                       <h3>Current</h3>
+                     <span id="current-1">100</span>
+                    
+                </div>
+           </div>
+       </div>
+       <div class="winner">
+           <h1><span id="winPlayer">Player</span> Won.</h1>
+            <div class="play-again">
+                         <h2>START AGAIN</h2>
+                     </div>
+       </div>
+   </div>
+    <script src="script.js"> </script>
+</body>
+</html>
